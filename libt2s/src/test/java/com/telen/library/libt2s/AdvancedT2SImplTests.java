@@ -25,7 +25,7 @@ import static org.junit.Assert.assertEquals;
  * Created by karim on 10/02/2018.
  */
 
-public class T2SManagerTests {
+public class AdvancedT2SImplTests {
 
     private AdvancedTextToSpeech advancedTts;
     @Mock Context mContext;

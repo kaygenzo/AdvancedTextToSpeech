@@ -13,14 +13,16 @@ buildscript {
         //Retrolambda
         classpath 'me.tatarka:gradle-retrolambda:3.6.0'
     }
+
+}
+
+plugins {
+    id "com.jfrog.bintray" version "1.8.0"
+    id "com.github.dcendents.android-maven" version "1.4.1"
 }
 
 allprojects {
     repositories {
         jcenter()
     }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
