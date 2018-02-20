@@ -28,5 +28,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 
-    compile project(':libt2s')
+    compile project(':advanced-t2s')
+    //compile 'com.telen.library:advanced-t2s:0.0.4'
 }

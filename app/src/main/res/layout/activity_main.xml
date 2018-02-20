@@ -73,4 +73,45 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/request_engines"
+        android:text="Choose engine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trigger_speed"/>
+
+    <LinearLayout
+        android:id="@+id/countries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/request_engines">
+        <Button
+            android:id="@+id/french"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FR"/>
+
+        <Button
+            android:id="@+id/british"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GB"/>
+
+        <Button
+            android:id="@+id/american"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US"/>
+
+        <Button
+            android:id="@+id/spanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ES"/>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

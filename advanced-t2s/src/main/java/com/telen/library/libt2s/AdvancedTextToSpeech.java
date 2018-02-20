@@ -1,5 +1,8 @@
 package com.telen.library.libt2s;
 
+import android.content.Context;
+import android.speech.tts.TextToSpeech;
+
 import java.util.List;
 
 import io.reactivex.Completable;
@@ -17,7 +20,7 @@ public interface AdvancedTextToSpeech {
     Completable replaceAll(List<String> newtextsToRead);
     Completable remove(int position);
     Completable clear();
-    Completable init(String engine);
+    Completable init();
     Completable release();
     Completable next();
     Completable previous();
@@ -27,4 +30,5 @@ public interface AdvancedTextToSpeech {
     Single<List<String>> getStack();
     Completable start();
     Completable stop();
+    Single<TextToSpeech.EngineInfo> getEngines();
 }

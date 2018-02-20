@@ -1,1 +1,1 @@
-include ':app', ':libt2s'
+include ':app', ':advanced-t2s'
